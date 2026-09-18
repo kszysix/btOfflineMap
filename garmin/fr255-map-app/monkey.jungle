@@ -1,0 +1,6 @@
+project.manifest = manifest.xml
+
+# Phase 0: no per-device source overrides yet. Add device-specific source roots here
+# (e.g. base.sourcePath, fr255.sourcePath) if/when a second target device is added.
+base.sourcePath = source
+base.resourcePath = resources

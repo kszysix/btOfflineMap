@@ -1,0 +1,30 @@
+# Android / Gradle
+android/companion-app/.gradle/
+android/companion-app/build/
+android/companion-app/*/build/
+android/companion-app/local.properties
+android/companion-app/.idea/
+android/companion-app/*.iml
+android/companion-app/captures/
+android/companion-app/.cxx/
+android/companion-app/app/libs/*.aar
+
+# Garmin / Connect IQ
+garmin/fr255-map-app/bin/
+garmin/fr255-map-app/bld/
+garmin/fr255-map-app/.idea/
+garmin/fr255-map-app/*.iml
+
+# Monkey C developer signing key (private key material — never commit this)
+garmin/**/developer_key.*
+garmin/**/*.der
+garmin/**/*.pem
+
+# Map data artifacts (large, regenerable — see tools/map-data)
+tools/map-data/output/
+*.osm.pbf
+*.pmtiles
+
+# General
+.DS_Store
+*.log

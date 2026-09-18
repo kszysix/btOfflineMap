@@ -1,0 +1,27 @@
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+    <!--
+        Application id must match GarminConnectionManager.WATCH_APP_ID on the Android side —
+        see shared/protocol/protocol.md "Application identity". Generated once with
+        `python3 -c "import uuid; print(uuid.uuid4())"`, not by the SDK's own project
+        tooling (this project was hand-scaffolded in Phase 0) — functionally equivalent,
+        just from a different source.
+    -->
+    <iq:application
+        entry="FR255MapAppApp"
+        id="c68fb880-5658-43be-8abf-14eb037cab7a"
+        launcherIcon="@Drawables.LauncherIcon"
+        name="@Strings.AppName"
+        type="watch-app"
+        minSdkVersion="4.2.0">
+        <iq:products>
+            <iq:product id="fr255"/>
+        </iq:products>
+        <iq:permissions>
+            <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="Positioning"/>
+        </iq:permissions>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+    </iq:application>
+</iq:manifest>

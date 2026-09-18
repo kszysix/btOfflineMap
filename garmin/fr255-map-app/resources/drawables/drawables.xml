@@ -1,0 +1,9 @@
+<drawables>
+    <!--
+        launcher_icon.png here is a placeholder (plain outlined square) generated for
+        Phase 0 so the manifest reference resolves. Replace with a real icon whenever one
+        is designed — not a Phase 0 concern.
+    -->
+    <bitmap id="LauncherIcon" filename="launcher_icon.png"/>
+</drawables>
+
